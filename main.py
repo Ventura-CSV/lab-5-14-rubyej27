@@ -1,11 +1,8 @@
 def fibo(N):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
-
-
+    a, b = 0, 1
+    for _ in range(N + 1):
+        yield a
+        a, b = b, a + b
 def main():
     N = 16
     gen = fibo(N)
